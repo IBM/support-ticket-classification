@@ -1,0 +1,14 @@
+declared-services:
+  stc-nlc-service:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  - stc-nlc-service
+  name: support-ticket-classification
+  command: npm start
+  path: .
+  memory: 256M
+  disk_quota: 256M
+  instances: 1
+  random-route: false

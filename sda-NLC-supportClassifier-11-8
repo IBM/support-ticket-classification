@@ -1,0 +1,8 @@
+{
+  "apikey": "xTWfQVg06NFTgmmTW9FGLVaqBxJc9uc1K4ILt18S3fWK",
+  "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:natural-language-classifier:us-south:a/47b84451ab70b94737518f7640a9ee42:7e010d8b-5393-4079-ac08-0513652e4645::",
+  "iam_apikey_name": "auto-generated-apikey-5e302f07-e77d-4227-b495-7454ca4dfb04",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Writer",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/47b84451ab70b94737518f7640a9ee42::serviceid:ServiceId-8092d67e-7272-4396-8dc2-c0265324336b",
+  "url": "https://gateway.watsonplatform.net/natural-language-classifier/api"
+}
