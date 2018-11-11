@@ -16,7 +16,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 1. User interacts with Natural Language Classifier (NLC) GUI to train the model.
 2. [Consumer complaint support ticket Dataset](https://github.ibm.com/riyamaro/support-ticket-classification/tree/master/docs/training_data) is loaded to the NLC service for training.
-3. User uploads excel file(having .xlsx extension) with test data to have it classified.
+3. User uploads excel file (having .xlsx extension) with test data to have it classified.
 4. App uses Watson Natural Language Classifier to classify the collection to mortgage, banking, loans or credit card related support tickets.
 
 ## Included components
@@ -93,7 +93,7 @@ $ git clone https://github.ibm.com/riyamaro/support-ticket-classification.git
 
 * The `Overview` tab top line has the `ModelID`. Click the copy icon and save this for the [Configure credentials](#4-configure-credentials) step.
 
-* Click the `Test` tab and enter a phrase from the data to test the classifier. For example, "I send my credit card payment on time every month and they charge me fees in the form of interest, I have contacted them once before and they said it would not happen again, It has happened again and they charge finance charges" is classified as "Billing disputes".
+* Click the `Test` tab and enter a phrase from the data to test the classifier. For example, "I send my credit card payment on time every month and they charge me fees in the form of interest, I have contacted them once before and they said it would not happen again, it has happened again and they charge finance charges" is classified as "Billing disputes".
 
 * Click the `Implementation` tab to see how to use the classifier with Curl, Java, Node, or Python.
 
@@ -107,7 +107,7 @@ Copy the [`env.example`](env.example) to `.env`.
 ```
 $ cp env.sample .env
 ```
-Edit the `.env` file with the necessary settings.If the credentials are IAM API Key & IAM URL instead of username and password, then you will have to uncomment that field from .env file and comment username/password before running npm start
+Edit the `.env` file with the necessary settings. If the credentials are IAM API Key & IAM URL instead of username and password, then you will have to uncomment that field from .env file and comment username/password before running npm start
 
 #### `env.sample:`
 
