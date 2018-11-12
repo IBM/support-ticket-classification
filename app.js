@@ -75,7 +75,7 @@ naturalLanguageClassifier.classifyCollection(params,
             res.write('</td>');
             res.write('<td>');
             res.write(textclass);
-            res.write('<td></tr>');
+            res.write('</td></tr>');
             }
             res.end();
             }
