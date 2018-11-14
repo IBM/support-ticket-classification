@@ -15,7 +15,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 ## Flow
 
 1. User interacts with Natural Language Classifier (NLC) GUI to train the model.
-2. [Consumer complaint support ticket Dataset](https://github.ibm.com/riyamaro/support-ticket-classification/tree/master/docs/training_data) is loaded to the NLC service for training.
+2. [Consumer complaint support ticket Dataset](https://github.com/IBM/support-ticket-classification/tree/master/docs/training_data) is loaded to the NLC service for training.
 3. User uploads excel file (having .xlsx extension) with test data to have it classified.
 4. App uses Watson Natural Language Classifier to classify the collection to mortgage, banking, loans or credit card related support tickets.
 
@@ -43,7 +43,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 Clone the `support-ticket-classification` locally. In a terminal, run:
 
 ```
-$ git clone https://github.ibm.com/riyamaro/support-ticket-classification.git
+$ git clone https://github.com/IBM/support-ticket-classification.git
 ```
 
 ### 2. Create Watson NLC service with IBM Cloud
@@ -133,7 +133,7 @@ You can either ``Deploy to IBM Cloud`` button **OR** create the services and run
 
 #### Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.ibm.com/riyamaro/support-ticket-classification.git)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/support-ticket-classification.git)
 
 1. To see the app and service created and configured for this Code Pattern, use the IBM Cloud dashboard. The app is named `support-ticket-classification` with a unique suffix.
 
