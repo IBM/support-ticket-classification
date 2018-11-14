@@ -27,17 +27,19 @@ var textnlc;
 var textclass;
 
 if (process.env.watson_nlc_iam_apikey && process.env.watson_nlc_iam_url !== '') {
-  const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+  var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
     url: process.env.watson_nlc_url,
     iam_apikey: process.env.watson_nlc_iam_apikey,
     iam_url: process.env.watson_nlc_iam_url
   });
-} else {
-  const naturalLanguageClassifier = new NaturalLanguageClassifierV1({
+} else if (process.env.watson_nlc_username && process.env.watson_nlc_password !== ''){
+  var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
     url: process.env.watson_nlc_url,
     username: process.env.watson_nlc_username,
     password: process.env.watson_nlc_password
   });
+} else {
+  console.log("Error no env variables to create NLC.");
 }
 
 app.use(bodyParser.urlencoded({ extended: false }));
