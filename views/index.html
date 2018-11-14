@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>Support ticket classification demo</title>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -14,11 +14,11 @@
     <br/>
     <h1>Support Ticket Classification Demo</h1>
     <br/>
-    <p>Input file should have less than 30 rows and should be .xlsx format with "text" as the column header. Refer sample input file <a href="https://github.ibm.com/riyamaro/support-ticket-classification/blob/master/docs/test_data.xlsx" target="_blank">here</a></p><br/>
+    <p>For this demo, input file should have less than or equal to 30 rows and should be .csv format. Refer sample input test data file <a href="hhttps://github.com/IBM/support-ticket-classification/tree/master/docs/test_data.csv" target="_blank">here</a></p><br/>
 	<form action="/uploadfile" enctype="multipart/form-data" method="post" id="eventForm">
         <div class="form-group">
-        <label for="exampleFormControlFile1">Select file (.xlsx only):</label>
-		<input type="file" name="nlcfile" id="nlcfile" accept=".xlsx"/>
+        <label for="exampleFormControlFile1">Select file (.csv only):</label>
+		<input type="file" name="nlcfile" id="nlcfile" accept=".csv"/>
 		<input type="submit" value="Upload File" name="submit" id="submit-btn" class="btn btn-secondary btn-sm" onclick="return ValidateExtension()">
         <br/> <span id="lblError" style="color: red;"></span>
         </div>
@@ -54,7 +54,7 @@ $('#eventForm').submit(function (e) {
 </script>
 <script type="text/javascript">
     function ValidateExtension() {
-        var allowedFiles = [".xlsx"];
+        var allowedFiles = [".csv"];
         var fileUpload = document.getElementById("nlcfile");
         var lblError = document.getElementById("lblError");
         var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(" + allowedFiles.join('|') + ")$");
