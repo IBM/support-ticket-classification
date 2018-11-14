@@ -1,0 +1,89 @@
+# Short title
+
+Technical support ticket classification using Watson Natural Language Classification
+
+# Long title
+
+Build an app that classifies various consumer complaint support tickets using Watson Natural Language Classification service.
+
+# Author
+
+* Riya Mary Roy
+* Raghavendra Deshpande
+
+# URLs
+
+### Github repo
+
+> "Get the code": https://github.com/IBM/support-ticket-classification
+
+* GitHub URL https://github.com/IBM/support-ticket-classification
+
+### Other URLs
+
+* [Watson Natural Language Classifier Demo](https://github.com/watson-developer-cloud/natural-language-classifier-nodejs)
+* [Watson Node.js SDK](https://github.com/watson-developer-cloud/node-sdk)
+
+# Summary
+
+In this Code Pattern, we will build an app that classifies various consumer complaint support tickets. We'll be using IBM Watson Natural Language Classifier (NLC) to train a model using consumer complaint dataset. Please note that this data is free to use for non-commercial use, and explicit permission must be obtained otherwise. The custom NLC model can be quickly and easily built in the Web UI, deployed into our NodeJS app using the Watson Developer Cloud Nodejs SDK, and then run from a browser.
+
+When the reader has completed this Code Pattern, they will understand how to:
+
+* Build a Watson Natural Language Classifier model using the Web UI.
+* Create a Node js app that utilizes the NLC model to classify the collection of consumer complaint support ticket text into various categories.
+* Use the Watson Developer Cloud SDK for NodeJS.
+
+# Technologies
+
+* [Artificial Intelligence](https://medium.com/ibm-watson): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
+* [Data Science](https://medium.com/ibm-watson): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
+* [Node.js](https://nodejs.org/): An open-source JavaScript run-time environment for executing server-side JavaScript code.
+
+# Description
+
+> Tell the story of your code pattern: describe the problem and who might encounter it; why is your pattern the right way to overcome the challenge? Highlight interesting code features and wherever possible, describe real-world situations where a developer will benefit from using the pattern. DO NOT include detailed technical steps, instructions, and commands; they will be provided in the readme file for your code.
+
+# Flow
+
+![](https://github.com/IBM/support-ticket-classification/blob/master/docs/images/architecture.png)
+
+1. User interacts with Natural Language Classifier (NLC) GUI to train the model.
+2. [Consumer complaint support ticket Dataset](https://github.ibm.com/riyamaro/support-ticket-classification/tree/master/docs/training_data) is loaded to the NLC service for training.
+3. User uploads excel file(having .xlsx extension) with test data to have it classified.
+4. App uses Watson Natural Language Classifier to classify the collection to mortgage, banking, loans or credit card related support tickets.
+
+
+# Instructions
+
+> Find the detailed steps for this pattern in the [readme file](https://github.com/IBM/support-ticket-classification/blob/master/README.md). The steps will show you how to:
+
+1. Clone the repo
+1. Create Watson NLC service with IBM Cloud
+1. Train the NLC model
+1. Configure credentials
+1. Run the application
+
+# Components and services
+
+* [Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Watson Natural Language Classifier](https://www.ibm.com/watson/services/natural-language-classifier/): An IBM Cloud service to interpret and classify natural language with confidence.
+
+# Runtimes
+
+* nodejs
+
+# Related IBM Developer content
+
+> List any IBM Developer resources that are closely related to this pattern, such as other patterns, blog posts, tutorials, etc..
+
+* [title](url): description
+* [title](url): description
+
+# Related links
+
+# Announcement
+
+> Every pattern must have an announcement post that introduces it. The announcement should explain why the pattern is important or useful. The announcement is an invitation to try the pattern; you can expand on why you created the pattern, discuss any challenges that you overcame, or expand on the technologies that you're using.
+
+> *Announcements should be at least 2-3 paragraphs*
