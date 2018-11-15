@@ -42,9 +42,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Description
 
-Consumer Finance Protection Bureau receive each week thousands of consumers’ complaints about financial products and services which are sent to various companies for response. With the huge volume of complaints being sent to the companies, it would be practically difficult to go through each and every complaint manually and then categorize the complaint into appropriate categories by various companies. The response time from the right team would take at least 15 days for the proper resolution. This manual approach is total waste of time is an inefficient way of routing the complaints manually.
-Because we know about support ticket and have support ticket examples, we can use AI tools to help us determine the nature of support ticket content. IBM Watson Natural Language Classifier (NLC) is a perfect fit for this use case. By providing the training data, we give the NLC service all that is needed to determine which support ticket belong to which category. The convenient uploading of complaints in an csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application
-This categorization of the data help to identify trends and problems in the marketplace to help the companies do a better job supervising companies, enforcing federal consumer financial laws and writing rules and regulations.
+Consumer Finance Protection Bureau each week receives thousands of consumers’ complaints about financial products and services, which are then sent to various companies for response. With the huge volume of complaints being sent to the companies, it would be difficult and impracticle to go through each and every complaint manually and then categorize the complaint into the appropriate categories by various companies. The response time from the right team would take an estimated 15 days for the proper resolution. This manual approach is an inefficient way of routing the complaints.
+Because we know aboutsupport tickets and have support ticket examples, we can use AI tools to help us determine the nature of support ticket content. IBM Watson Natural Language Classifier (NLC) is a perfect fit for this use case. By providing the training data, we give the NLC service all that is needed to determine which support tickets belong to which category. The convenient uploading of complaints in a csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application.
+This categorization of the data helps to identify trends and problems in the marketplace to help the companies do a better job supervising companies, enforcing federal consumer financial laws, and writing rules and regulations.
 
 # Flow
 
@@ -84,10 +84,10 @@ This categorization of the data help to identify trends and problems in the mark
 
 # Announcement
 
-Organizations such as Consumer Financial Protection Bureau receive each week thousands of consumers’ complaints about financial products and services which are sent to various companies for response. 
-With the huge volume of complaints being sent to the companies, it would be practically difficult to go through each and every complaint manually and then categorize the complaint into appropriate categories by various companies. The response time from the right team would take at least 15 days for the proper resolution. 
+Organizations such as the Consumer Financial Protection Bureau receive thousands of consumers’ complaints  each week. These complaints are about financial products and services which are sent to various companies for response. 
+With the huge volume of complaints being sent to the companies, it would be impracticle and  difficult to go through each and every complaint manually and then categorize the complaint into the appropriate categories by various companies. The response time from the right team would take an estimated 15 days for the proper resolution. 
 
-We can use AI tools such as IBM Watson Natural Language Classifier (NLC) to help us model the classifier using the training data to determine the nature of support ticket content.
-The convenient uploading of complaints in an csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application
+We can use AI tools such as IBM Watson Natural Language Classifier (NLC) to help us model the classifier using the training data to determine the nature of the support ticket content.
+The convenient uploading of complaints in a csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application.
 
-This categorization of the data help to identify trends and problems in the marketplace to help the companies do a better job supervising companies, enforcing federal consumer financial laws and writing rules and regulations.
+This categorization of the data helps to identify trends and problems in the marketplace to help the companies do a better job supervising companies, in enforcing federal consumer financial laws, and in writing rules and regulations.
