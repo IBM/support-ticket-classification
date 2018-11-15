@@ -42,7 +42,9 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Description
 
-> Tell the story of your code pattern: describe the problem and who might encounter it; why is your pattern the right way to overcome the challenge? Highlight interesting code features and wherever possible, describe real-world situations where a developer will benefit from using the pattern. DO NOT include detailed technical steps, instructions, and commands; they will be provided in the readme file for your code.
+Consumer Finance Protection Bureau each week receives thousands of consumers’ complaints about financial products and services, which are then sent to various companies for response. With the huge volume of complaints being sent to the companies, it would be difficult and impracticle to go through each and every complaint manually and then categorize the complaint into the appropriate categories by various companies. The response time from the right team would take an estimated 15 days for the proper resolution. This manual approach is an inefficient way of routing the complaints.
+Because we know aboutsupport tickets and have support ticket examples, we can use AI tools to help us determine the nature of support ticket content. IBM Watson Natural Language Classifier (NLC) is a perfect fit for this use case. By providing the training data, we give the NLC service all that is needed to determine which support tickets belong to which category. The convenient uploading of complaints in a csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application.
+This categorization of the data helps to identify trends and problems in the marketplace to help the companies do a better job supervising companies, enforcing federal consumer financial laws, and writing rules and regulations.
 
 # Flow
 
@@ -75,15 +77,17 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Related IBM Developer content
 
-> List any IBM Developer resources that are closely related to this pattern, such as other patterns, blog posts, tutorials, etc..
-
-* [title](url): description
-* [title](url): description
+* [Detect email phishing with Watson Natural Language Classifier](https://developer.ibm.com/patterns/predict-phishing-attempts-in-email-with-nlc): Train Watson Natural Language Classifier to detect email phishing attempts
+* [Create a natural language classifier that identifies spam](https://developer.ibm.com/tutorials/cc-spam-classification-service-watson-nlc-bluemix-trs/): Create a spam classifier app by creating a new instance of Watson Natural Language Classifier, training it to distinguish between spam and non-spam, and testing its accuracy
 
 # Related links
 
 # Announcement
 
-> Every pattern must have an announcement post that introduces it. The announcement should explain why the pattern is important or useful. The announcement is an invitation to try the pattern; you can expand on why you created the pattern, discuss any challenges that you overcame, or expand on the technologies that you're using.
+Organizations such as the Consumer Financial Protection Bureau receive thousands of consumers’ complaints  each week. These complaints are about financial products and services which are sent to various companies for response. 
+With the huge volume of complaints being sent to the companies, it would be impracticle and  difficult to go through each and every complaint manually and then categorize the complaint into the appropriate categories by various companies. The response time from the right team would take an estimated 15 days for the proper resolution. 
 
-> *Announcements should be at least 2-3 paragraphs*
+We can use AI tools such as IBM Watson Natural Language Classifier (NLC) to help us model the classifier using the training data to determine the nature of the support ticket content.
+The convenient uploading of complaints in a csv format in the GUI makes creating the model simple. Then, you can use Watson Developer Cloud SDKs to integrate the service into your application.
+
+This categorization of the data helps to identify trends and problems in the marketplace to help the companies do a better job supervising companies, in enforcing federal consumer financial laws, and in writing rules and regulations.
