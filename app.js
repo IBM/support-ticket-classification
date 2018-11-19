@@ -16,12 +16,13 @@
 
 require("dotenv").config();
 
+
 const express = require("express");
 const app = express();
-const csvjson = require('csvjson');
+const csv = require("csvtojson");
 const bodyParser = require("body-parser");
 const formidable = require("formidable");
-const fs = require('fs');
+const fs = require("fs");
 const NaturalLanguageClassifierV1 = require("watson-developer-cloud/natural-language-classifier/v1");
 var textnlc;
 var textclass;
@@ -58,11 +59,10 @@ form.parse(req, function (err, fields, files) {
    } else {
     const filePath = JSON.parse(JSON.stringify(files));
     const workbook = filePath.nlcfile.path;
-    const data = fs.readFileSync(workbook, { encoding : 'utf8'});
-    const options = {headers : "text"};
+    csv({noheader: true,headers: ['text']}).fromFile(workbook).then((jsonObj)=>{
     const params = {
     classifier_id: process.env.watson_nlc_classifier_id,
-    collection: csvjson.toObject(data, options)
+    collection: jsonObj
     };
     naturalLanguageClassifier.classifyCollection(params,
     function(err, response) {
@@ -82,6 +82,7 @@ form.parse(req, function (err, fields, files) {
             res.end();
                     }
                 });
+                })
             }
     });
 });
