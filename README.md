@@ -1,5 +1,3 @@
-# Work in Progress. Please re-visit soon for the completed code pattern.
-
 # Technical Support ticket classification using Watson Natural Language Classifier
 
 In this Code Pattern, we will build an app that classifies various consumer complaint support tickets. We'll be using IBM Watson Natural Language Classifier (NLC) to train a model using [consumer complaint dataset](https://www.consumerfinance.gov/data-research/consumer-complaints/#download-the-data). Please note that this data is free to use for non-commercial use, and explicit permission must be obtained otherwise. The custom NLC model can be quickly and easily built in the Web UI, deployed into our nodejs app using the [Watson Developer Cloud Nodejs SDK](https://github.com/watson-developer-cloud/node-sdk), and then run from a browser.
