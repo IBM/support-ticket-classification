@@ -14,7 +14,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 1. User interacts with Natural Language Classifier (NLC) GUI to train the model.
 2. [Consumer complaint support ticket Dataset](https://github.com/IBM/support-ticket-classification/tree/master/docs/training_data) is loaded to the NLC service for training.
-3. User uploads excel file (having .xlsx extension) with test data to have it classified.
+3. User uploads excel file (having .csv extension) with test data to have it classified.
 4. App uses Watson Natural Language Classifier to classify the collection to mortgage, banking, loans or credit card related support tickets.
 
 ## Included components
