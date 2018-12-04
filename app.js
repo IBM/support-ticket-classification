@@ -30,8 +30,7 @@ var textclass;
 if (process.env.watson_nlc_iam_apikey && process.env.watson_nlc_iam_url !== '') {
   var naturalLanguageClassifier = new NaturalLanguageClassifierV1({
     url: process.env.watson_nlc_url,
-    iam_apikey: process.env.watson_nlc_iam_apikey,
-    iam_url: process.env.watson_nlc_iam_url
+    iam_apikey: process.env.watson_nlc_iam_apikey
   });
 } else if (process.env.watson_nlc_username && process.env.watson_nlc_password !== ''){
   var naturalLanguageClassifier = new NaturalLanguageClassifierV1({

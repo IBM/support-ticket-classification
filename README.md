@@ -113,15 +113,14 @@ Edit the `.env` file with the necessary settings. If the credentials are IAM API
 # REPLACE CREDENTIALS WITH YOUR NATURAL LANGUAGE CLASSIFIER CREDENTIALS
 # Rename this file to .env before running 'npm start'.
 
-watson_nlc_classifier_id=
+watson_nlc_url= https://gateway.watsonplatform.net/natural-language-classifier/api
+watson_nlc_classifier_id=<Add model id>
 # You need to provide either username and password
-watson_nlc_username=
-watson_nlc_password=
+# watson_nlc_username=<Add NLC Username>
+# watson_nlc_password=<Add NLC Password>
 
 # OR IAM API key and URL
-
-# watson_nlc_iam_apikey=
-# watson_nlc_iam_url=
+watson_nlc_iam_apikey=<Add NLC API key>
 
 ```
 
@@ -137,7 +136,9 @@ You can either ``Deploy to IBM Cloud`` button **OR** create the services and run
 
 1. You will need to add the `ModelID` from [step 3](#3-train-the-nlc-model) above and the NLC credentials from [Configure credentials](#4-configure-credentials) to the application. After accessing your app from the dashboard, click on ``Runtime`` on the menu and navigate to the ``Environment variables`` tab.
 
-1. Replace `placeholder` for the `watson_nlc_classifier_id`, `watson_nlc_username`, and `watson_nlc_password` variables with your `ModelID` and credential values,  and click `Save`.
+1. Replace `placeholder` for the `watson_nlc_classifier_id` and `watson_nlc_iam_apikey` variables with your `ModelID` and API Key,  and click `Save`.
+
+Note: NLC API URL will change based on the region you have created the NLC service.
 
 ![](doc/source/images/NLCemailPhishENVvars.png)
 
