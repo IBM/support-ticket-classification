@@ -46,7 +46,7 @@ $ git clone https://github.com/IBM/support-ticket-classification.git
 
 ### 2. Create Watson NLC service with IBM Cloud
 
-* Create [Watson Studio](https://console.bluemix.net/catalog/services/watson-studio) service in your IBM Cloud account.
+* Create [Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio) service in your IBM Cloud account.
 
 * In Watson Studio service create a New Project by clicking the `New Project` tile or use `+ New project`:
 
@@ -130,7 +130,7 @@ You can either ``Deploy to IBM Cloud`` button **OR** create the services and run
 
 #### Deploy to IBM Cloud
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/support-ticket-classification.git)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/support-ticket-classification.git)
 
 1. To see the app and service created and configured for this Code Pattern, use the IBM Cloud dashboard. The app is named `support-ticket-classification` with a unique suffix.
 
